@@ -4,13 +4,13 @@ A no-nonsense technical blog that cuts through the noise in software development
 
 ## Deployment
 
-This blog is automatically deployed to GitHub Pages using GitHub Actions. Whenever changes are pushed to the `master` branch, the site is automatically built and deployed.
+This blog is automatically deployed to GitHub Pages using GitHub Actions. The `gh-pages` branch is the default branch and contains all the site content. Whenever changes are pushed to this branch, the site is automatically deployed.
 
 You can access the live site at: https://underwood-enterprises.github.io/total-fucking-bullshit/
 
 ### GitHub Pages Setup
 
-If you're experiencing issues with the GitHub Pages deployment, please refer to the [GitHub Pages Setup Instructions](GITHUB_PAGES_SETUP.md) for detailed steps on how to enable GitHub Pages for this repository.
+For detailed information about the GitHub Pages setup and troubleshooting, please refer to the [GitHub Pages Setup Instructions](GITHUB_PAGES_SETUP.md).
 
 ## About
 
