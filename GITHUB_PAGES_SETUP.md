@@ -1,21 +1,20 @@
 # Setting Up GitHub Pages
 
-We've updated the GitHub Pages deployment to use a more reliable approach. The new workflow will:
+We've completely revised the GitHub Pages deployment approach:
 
-1. Create a `gh-pages` branch (if it doesn't exist)
-2. Deploy the contents of the repository to that branch
-3. Configure GitHub Pages to serve from that branch
+1. The `gh-pages` branch is now the default branch for the repository
+2. All content is directly stored in this branch
+3. A GitHub Actions workflow automatically deploys changes to GitHub Pages
 
 ## Enable GitHub Pages in Repository Settings
 
-After the workflow runs successfully, follow these steps to ensure GitHub Pages is properly enabled:
+Follow these steps to ensure GitHub Pages is properly enabled:
 
 1. Go to your GitHub repository: https://github.com/underwood-enterprises/total-fucking-bullshit
 2. Click on the "Settings" tab (near the top right)
 3. Scroll down to the "GitHub Pages" section (or click on "Pages" in the left sidebar)
-4. Under "Source", select "Deploy from a branch"
-5. In the "Branch" dropdown, select "gh-pages" and "/ (root)"
-6. Click "Save"
+4. Under "Source", select "GitHub Actions" as the build and deployment source
+5. Click "Save"
 
 ## Verify Workflow Permissions
 
@@ -38,16 +37,13 @@ After the workflow runs successfully, follow these steps to ensure GitHub Pages 
 ### Issue: "Error: The deploy step encountered an error"
 - Solution: This could be due to various reasons. Check the detailed logs for more information.
 
-### Issue: "Repository not found" or authentication errors
-- Solution: Make sure the workflow has the correct permissions (contents: write) in the workflow file.
+## Making Changes
 
-## After Fixing Issues
+Since `gh-pages` is now the default branch, you should:
 
-Once you've made the necessary changes, you can manually trigger the workflow:
+1. Always pull the latest changes before making edits: `git pull origin gh-pages`
+2. Make your changes directly to the files
+3. Commit and push to the `gh-pages` branch: `git push origin gh-pages`
+4. The GitHub Actions workflow will automatically deploy your changes
 
-1. Go to the "Actions" tab
-2. Click on "Deploy to GitHub Pages" in the left sidebar
-3. Click "Run workflow" dropdown
-4. Select the branch (usually "master") and click "Run workflow"
-
-Your blog should be available at: https://underwood-enterprises.github.io/total-fucking-bullshit/ once the deployment is successful and you've configured GitHub Pages to serve from the gh-pages branch.
+Your blog should be available at: https://underwood-enterprises.github.io/total-fucking-bullshit/ once the deployment is successful.
