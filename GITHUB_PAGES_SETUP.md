@@ -1,14 +1,21 @@
 # Setting Up GitHub Pages
 
-If you're experiencing issues with the GitHub Pages deployment, follow these steps to ensure GitHub Pages is properly enabled for your repository:
+We've updated the GitHub Pages deployment to use a more reliable approach. The new workflow will:
+
+1. Create a `gh-pages` branch (if it doesn't exist)
+2. Deploy the contents of the repository to that branch
+3. Configure GitHub Pages to serve from that branch
 
 ## Enable GitHub Pages in Repository Settings
+
+After the workflow runs successfully, follow these steps to ensure GitHub Pages is properly enabled:
 
 1. Go to your GitHub repository: https://github.com/underwood-enterprises/total-fucking-bullshit
 2. Click on the "Settings" tab (near the top right)
 3. Scroll down to the "GitHub Pages" section (or click on "Pages" in the left sidebar)
-4. Under "Source", select "GitHub Actions" as the build and deployment source
-5. Click "Save"
+4. Under "Source", select "Deploy from a branch"
+5. In the "Branch" dropdown, select "gh-pages" and "/ (root)"
+6. Click "Save"
 
 ## Verify Workflow Permissions
 
@@ -25,14 +32,14 @@ If you're experiencing issues with the GitHub Pages deployment, follow these ste
 
 ## Common Issues and Solutions
 
-### Issue: "Error: Unable to find the GitHub Pages source branch"
-- Solution: Make sure you've selected "GitHub Actions" as the source in the GitHub Pages settings.
-
 ### Issue: "Error: The process '/usr/bin/git' failed with exit code 128"
 - Solution: Check that the workflow has proper permissions to access the repository.
 
-### Issue: "Error: The deploy step encountered an error: Error: Failed to deploy to GitHub Pages"
+### Issue: "Error: The deploy step encountered an error"
 - Solution: This could be due to various reasons. Check the detailed logs for more information.
+
+### Issue: "Repository not found" or authentication errors
+- Solution: Make sure the workflow has the correct permissions (contents: write) in the workflow file.
 
 ## After Fixing Issues
 
@@ -43,4 +50,4 @@ Once you've made the necessary changes, you can manually trigger the workflow:
 3. Click "Run workflow" dropdown
 4. Select the branch (usually "master") and click "Run workflow"
 
-Your blog should be available at: https://underwood-enterprises.github.io/total-fucking-bullshit/ once the deployment is successful.
+Your blog should be available at: https://underwood-enterprises.github.io/total-fucking-bullshit/ once the deployment is successful and you've configured GitHub Pages to serve from the gh-pages branch.
