@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>What Kind of Bullshit are C4/C3 and Other Diagrams? | Total F***ing Bullshit</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <h1>Total F***ing Bullshit</h1>
+            <p class="tagline">Cutting through the noise in software development</p>
+            <nav>
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="../about.html">About</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <article class="post-content">
+            <h1>What Kind of Bullshit are C4/C3 and Other Diagrams?</h1>
+            <div class="post-meta">April 3, 2025</div>
+
+            <p>
+                In the world of software architecture, we're constantly bombarded with new methodologies, frameworks,
+                and visualization techniques that promise to make our systems more understandable. C4, C3, UML, ERD,
+                DFD—the alphabet soup never ends. But how much of this is actually useful, and how much is just another
+                layer of abstraction that wastes our time?
+            </p>
+
+            <h2>The C4 Model: Complexity Disguised as Clarity</h2>
+
+            <p>
+                The C4 model, created by Simon Brown, stands for Context, Containers, Components, and Code. It's
+                marketed as a "simple" way to document software architecture using a hierarchical approach. But let's be
+                honest: is adding four layers of diagrams really making anything simpler?
+            </p>
+
+            <p>
+                Here's the breakdown of what each level supposedly offers:
+            </p>
+
+            <ul>
+                <li><strong>Context:</strong> The big picture. Your system and its users. Okay, this one's actually
+                    useful.</li>
+                <li><strong>Containers:</strong> The high-level technical building blocks. Web apps, mobile apps,
+                    databases, etc.</li>
+                <li><strong>Components:</strong> Groups of related functionality within a container.</li>
+                <li><strong>Code:</strong> Classes, interfaces, etc. (Rarely diagrammed because, you know, that would be
+                    too much work.)</li>
+            </ul>
+
+            <p>
+                The problem isn't that these diagrams are inherently bad—it's that they often become an end unto
+                themselves. Teams spend weeks perfecting their C4 diagrams, only for them to become outdated the moment
+                the first line of code changes. And let's not pretend these diagrams are "living documents" that get
+                updated regularly. We all know they'll rot in a Confluence page somewhere.
+            </p>
+
+            <h2>C3 Architecture: The Lesser-Known Cousin</h2>
+
+            <p>
+                C3 (Context, Container, Component) is essentially C4 without the code level. It's like C4 admitted that
+                nobody was going to diagram at the code level anyway, so they just lopped it off. At least they're being
+                realistic.
+            </p>
+
+            <p>
+                The issue with both C3 and C4 is that they create a false sense of understanding. Drawing boxes and
+                arrows doesn't mean you understand how the system works—it means you understand how to draw boxes and
+                arrows.
+            </p>
+
+            <h2>The Diagram Addiction</h2>
+
+            <p>
+                The software industry has a diagram addiction. We seem to believe that if we can just visualize our
+                systems in the right way, all our problems will be solved. But diagrams don't solve problems—engineers
+                do.
+            </p>
+
+            <p>
+                Here are some common symptoms of diagram addiction:
+            </p>
+
+            <ul>
+                <li>Spending more time updating diagrams than writing code</li>
+                <li>Having meetings about how to diagram rather than what to build</li>
+                <li>Using diagrams as a substitute for clear written documentation</li>
+                <li>Believing that a good diagram can compensate for a poorly designed system</li>
+            </ul>
+
+            <p>
+                The reality is that most diagrams become outdated almost immediately. They're snapshots of a system
+                that's constantly evolving, and they rarely evolve with it.
+            </p>
+
+            <h2>When Diagrams Are Actually Useful</h2>
+
+            <p>
+                I'm not saying all diagrams are useless. Far from it. Diagrams can be incredibly valuable when:
+            </p>
+
+            <ul>
+                <li>They're created for a specific purpose, not just because "we should have diagrams"</li>
+                <li>They focus on one aspect of the system rather than trying to capture everything</li>
+                <li>They're used as communication tools during discussions, not as artifacts to be preserved</li>
+                <li>They're simple enough that they can be recreated quickly when needed</li>
+            </ul>
+
+            <p>
+                The best diagram is often the one drawn on a whiteboard during a discussion, captured in a photo, and
+                then erased. It served its purpose: facilitating understanding in that moment.
+            </p>
+
+            <h2>The Alternative: Documentation That Matters</h2>
+
+            <p>
+                Instead of obsessing over the perfect architectural diagram, we should focus on documentation that
+                actually helps developers do their jobs:
+            </p>
+
+            <ul>
+                <li><strong>Decision records:</strong> Why did we choose this technology or approach?</li>
+                <li><strong>API documentation:</strong> How do I interact with this system?</li>
+                <li><strong>Setup guides:</strong> How do I get this running locally?</li>
+                <li><strong>Troubleshooting guides:</strong> What do I do when things go wrong?</li>
+            </ul>
+
+            <p>
+                These are the documents that developers actually use day-to-day. They're practical, specific, and
+                directly applicable to the work being done.
+            </p>
+
+            <h2>Conclusion: Use Diagrams, Don't Be Used By Them</h2>
+
+            <p>
+                Diagrams like C4 and C3 can be useful tools when used appropriately. The problem arises when they become
+                mandatory deliverables that consume more time than they save.
+            </p>
+
+            <p>
+                The next time someone insists that you need to create a complete set of C4 diagrams for your system, ask
+                them why. What specific problem are these diagrams solving? Who will use them? How will they be kept up
+                to date?
+            </p>
+
+            <p>
+                If the answers are vague or amount to "because that's what we do," you might be dealing with a case of
+                diagram bullshit. And in that case, feel free to send them a link to this article.
+            </p>
+
+            <p>
+                Remember: diagrams should serve you, not the other way around. Use them when they help, ignore them when
+                they don't, and never let them become a substitute for building good software.
+            </p>
+        </article>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Total F***ing Bullshit. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+
+</html>
