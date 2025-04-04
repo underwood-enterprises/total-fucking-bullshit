@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | Total F***ing Bullshit</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <h1>Total F***ing Bullshit</h1>
+            <p class="tagline">Cutting through the noise in software development</p>
+            <div id="menu-toggle" class="menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="theme-switch-wrapper">
+                <label class="theme-switch" for="dark-mode-toggle">
+                    <input type="checkbox" id="dark-mode-toggle" />
+                    <span class="slider"></span>
+                </label>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html" class="active">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <article class="post-content">
+            <h1>Contact Us</h1>
+
+            <p>
+                Have something to say? Want to contribute to the blog? Found some bullshit that needs to be called out?
+                We'd love to hear from you.
+            </p>
+
+            <form class="contact-form" id="contact-form">
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="subject">Subject</label>
+                    <input type="text" id="subject" name="subject" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" required></textarea>
+                </div>
+
+                <button type="submit" class="btn">Send Message</button>
+            </form>
+
+            <div id="form-success"
+                style="display: none; margin-top: 1rem; padding: 1rem; background-color: #4CAF50; color: white; border-radius: 4px;">
+                Your message has been sent successfully! We'll get back to you soon.
+            </div>
+
+            <div id="form-error"
+                style="display: none; margin-top: 1rem; padding: 1rem; background-color: #f44336; color: white; border-radius: 4px;">
+                There was an error sending your message. Please try again later.
+            </div>
+
+            <h2>Other Ways to Reach Us</h2>
+
+            <p>
+                If you prefer not to use the contact form, you can also reach us at:
+            </p>
+
+            <ul>
+                <li>Email: <a href="mailto:contact@totalfbullshit.com">contact@totalfbullshit.com</a></li>
+                <li>Twitter: <a href="https://twitter.com/totalfbullshit" target="_blank">@totalfbullshit</a></li>
+                <li>GitHub: <a href="https://github.com/underwood-enterprises/total-fucking-bullshit"
+                        target="_blank">underwood-enterprises/total-fucking-bullshit</a></li>
+            </ul>
+        </article>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; <span class="copyright-year">2025</span> Total F***ing Bullshit. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script>
+        // Simple form handling
+        document.getElementById('contact-form').addEventListener('submit', function (e) {
+            e.preventDefault();
+
+            // In a real implementation, you would send the form data to a server
+            // For now, we'll just show the success message
+            document.getElementById('form-success').style.display = 'block';
+
+            // Reset the form
+            this.reset();
+
+            // Hide the success message after 5 seconds
+            setTimeout(function () {
+                document.getElementById('form-success').style.display = 'none';
+            }, 5000);
+        });
+    </script>
+</body>
+
+</html>

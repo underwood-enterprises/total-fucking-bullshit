@@ -13,10 +13,22 @@
         <div class="container">
             <h1>Total F***ing Bullshit</h1>
             <p class="tagline">Cutting through the noise in software development</p>
+            <div id="menu-toggle" class="menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="theme-switch-wrapper">
+                <label class="theme-switch" for="dark-mode-toggle">
+                    <input type="checkbox" id="dark-mode-toggle" />
+                    <span class="slider"></span>
+                </label>
+            </div>
             <nav>
                 <ul>
                     <li><a href="index.html">Home</a></li>
                     <li><a href="about.html" class="active">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
                 </ul>
             </nav>
         </div>
@@ -107,9 +119,10 @@
 
     <footer>
         <div class="container">
-            <p>&copy; 2025 Total F***ing Bullshit. All rights reserved.</p>
+            <p>&copy; <span class="copyright-year">2025</span> Total F***ing Bullshit. All rights reserved.</p>
         </div>
     </footer>
+    <script src="js/main.js"></script>
 </body>
 
 </html>
