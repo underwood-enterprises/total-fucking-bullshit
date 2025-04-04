@@ -2,6 +2,12 @@
 
 A no-nonsense technical blog that cuts through the noise in software development.
 
+## Deployment
+
+This blog is automatically deployed to GitHub Pages using GitHub Actions. Whenever changes are pushed to the `master` branch, the site is automatically built and deployed.
+
+You can access the live site at: https://underwood-enterprises.github.io/total-fucking-bullshit/
+
 ## About
 
 This blog is dedicated to providing honest, straightforward perspectives on software development practices, tools, and methodologies. We aim to challenge conventional wisdom and question overhyped trends in the tech industry.
