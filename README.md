@@ -8,6 +8,10 @@ This blog is automatically deployed to GitHub Pages using GitHub Actions. Whenev
 
 You can access the live site at: https://underwood-enterprises.github.io/total-fucking-bullshit/
 
+### GitHub Pages Setup
+
+If you're experiencing issues with the GitHub Pages deployment, please refer to the [GitHub Pages Setup Instructions](GITHUB_PAGES_SETUP.md) for detailed steps on how to enable GitHub Pages for this repository.
+
 ## About
 
 This blog is dedicated to providing honest, straightforward perspectives on software development practices, tools, and methodologies. We aim to challenge conventional wisdom and question overhyped trends in the tech industry.
